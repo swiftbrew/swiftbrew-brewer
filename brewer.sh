@@ -9,6 +9,7 @@ BOTTLE_FILENAME=$PACKAGE_NAME-$PACKAGE_VERSION.mojave.tar.xz
 # Check if the bottle is already available and exit if found
 BOTTLE_URL=https://dl.bintray.com/swiftbrew/bottles/$BOTTLE_FILENAME
 STATUS_CODE=$(curl \
+  --head \
   --silent \
   --fail \
   --output /dev/null \
