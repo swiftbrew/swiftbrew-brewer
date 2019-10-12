@@ -32,7 +32,7 @@ curl -XPOST \
 HOMEBREW_NO_AUTO_UPDATE=1 HOMEBREW_NO_INSTALL_CLEANUP=1 brew install mint
 
 # Use mint to build the package
-mint install "$PACKAGE_GIT_URL@$PACKAGE_VERSION"
+mint install --verbose "$PACKAGE_GIT_URL@$PACKAGE_VERSION"
 
 cd /usr/local/lib/mint/packages/
 
